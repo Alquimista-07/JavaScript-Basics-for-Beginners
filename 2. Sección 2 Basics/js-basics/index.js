@@ -63,3 +63,23 @@ let selection = 'name';
 person[selection] = 'Mary';
 
 console.log(person.name);
+
+
+// Arrays
+let selectedColors = []; // Empty array
+console.log(selectedColors);
+
+let selectedColors2 = ['red', 'blue'];
+console.log(selectedColors2);
+console.log(selectedColors2[0]);
+console.log(selectedColors2[1]);
+
+// Add element
+selectedColors2[2] = 'green';
+console.log(selectedColors2);
+
+// Dynamic lenguaje
+selectedColors2[3] = 2;
+console.log(selectedColors2);
+
+console.log(selectedColors2.length);
