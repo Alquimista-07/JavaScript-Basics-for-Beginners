@@ -22,5 +22,12 @@ console.log(interestRate);
 
 // Constant
 const interestRate2 = 0.3;
-interestRate2 = 1;
+//interestRate2 = 1;
 console.log(interestRate2); // Error: you can't change a constant
+
+// Primitive Types: String, Number, Boolean, undefined, null
+let name3 = 'Mosh';  // String literal
+let age = 30; // Number literal
+let isApproved = true; // Boolean leteral (true or false)
+let firstName3 = undefined; // undefined
+let selectedColor = null; // null
