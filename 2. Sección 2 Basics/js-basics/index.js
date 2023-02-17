@@ -38,3 +38,28 @@ console.log(typeof(name4)); // String
 
 name4 = 4;
 console.log(typeof(name4)); // Number
+
+// Objects - (Reference Types: Objects, Array, Function)
+let person = { 
+    name: 'Mosh',
+    age: 30
+};
+
+console.log(person);
+console.log(person.name);
+console.log(person.age);
+
+// Dot Notation
+person.name = 'John';
+
+console.log(person);
+console.log(person.name);
+
+// Backet Notation
+person[ 'name' ] = 'Mary'
+console.log(person.name);
+
+let selection = 'name';
+person[selection] = 'Mary';
+
+console.log(person.name);
