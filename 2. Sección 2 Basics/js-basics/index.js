@@ -31,3 +31,10 @@ let age = 30; // Number literal
 let isApproved = true; // Boolean leteral (true or false)
 let firstName3 = undefined; // undefined
 let selectedColor = null; // null
+
+// Dynamic Typing
+let name4 = 'Mosh';
+console.log(typeof(name4)); // String
+
+name4 = 4;
+console.log(typeof(name4)); // Number
