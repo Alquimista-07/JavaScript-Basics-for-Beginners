@@ -93,3 +93,14 @@ function greet( name, lastName){
 
 greet('Jhon','Doe');
 greet('Mary','Smith');
+
+// Types of Functions
+// Calculating a value
+function square( number ){
+    return number * number;
+}
+
+let number = square(2);
+console.log(number);
+
+console.log(square(6));
