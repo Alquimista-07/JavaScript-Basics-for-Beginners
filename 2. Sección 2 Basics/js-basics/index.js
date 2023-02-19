@@ -83,3 +83,13 @@ selectedColors2[3] = 2;
 console.log(selectedColors2);
 
 console.log(selectedColors2.length);
+
+// Functions
+function greet( name, lastName){
+
+    console.log('Hello ' + name + ' ' + lastName);
+
+}
+
+greet('Jhon','Doe');
+greet('Mary','Smith');
