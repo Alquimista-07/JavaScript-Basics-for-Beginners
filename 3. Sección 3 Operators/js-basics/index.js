@@ -33,3 +33,13 @@ console.log('*****************************');
 console.log(y2--);
 console.log(y2);
 console.log('*****************************');
+
+// Assignment Operators
+let a = 10;
+let a2 = 10;
+
+console.log(a = a + 5);
+console.log(a += 5);
+
+console.log(a2 = a2 * 3);
+console.log(a2 *= 3);
