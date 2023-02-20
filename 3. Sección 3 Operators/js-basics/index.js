@@ -112,7 +112,7 @@ console.log('Application Refused', applicationRefuse);
 
 // Logical Operators with Non-Booleans
 console.log('-------------------------------------------');
-// Falsy (flase)
+// Falsy (false)
 // undefined, null, 0 , false, '', NaN
 
 // Anything that is not Falsy -> Truthy
@@ -124,3 +124,32 @@ let defaultColor = 'blue';
 let currentColor = userColor || defaultColor;
 
 console.log(currentColor);
+
+// BitWise Operators
+console.log('*********************************************');
+// 1 = 00000001
+// 2 = 00000010
+// Result = 00000011
+console.log(1 | 2); // Bitwise OR
+
+// 1 = 00000001
+// 2 = 00000010
+// Result = 00000000
+console.log(1 & 2); // Bitwise AND
+
+// Example
+// Access Control System (Read, Write, Execute)
+// 00000100 -> Read Only
+// 00000010 -> Write Only
+// 00000001 -> Execute Only
+
+const readPermission = 4;
+const writePermision = 2;
+const executePermission = 1;
+
+let myPermission = 0;
+
+myPermission = myPermission | writePermision;
+
+let message = ( myPermission & readPermission ) ? 'yes' : 'no';
+console.log(message);
