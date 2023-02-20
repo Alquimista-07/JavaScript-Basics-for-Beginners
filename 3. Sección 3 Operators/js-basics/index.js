@@ -56,6 +56,15 @@ console.log(b <= 1);
 
 console.log('------------------------------');
 
-// Equality
-console.log(b === 1);
+// Equality Operators
+// Strict Equality (Type + value)
+console.log(b === 1); // -> true
+console.log(b === '1'); // -> false
+
 console.log(b !== 1);
+
+// Lose Equality (Value)
+console.log(1 == '1'); // -> true
+console.log('1' == '1'); // -> true
+console.log(true == 1); // -> true
+console.log(true == 0); // -> false
