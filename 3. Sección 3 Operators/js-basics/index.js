@@ -43,3 +43,19 @@ console.log(a += 5);
 
 console.log(a2 = a2 * 3);
 console.log(a2 *= 3);
+
+console.log('*****************************');
+
+// Comparison Operators
+let b = 1;
+
+console.log(b > 0);
+console.log(b >= 1);
+console.log(b < 1);
+console.log(b <= 1);
+
+console.log('------------------------------');
+
+// Equality
+console.log(b === 1);
+console.log(b !== 1);
