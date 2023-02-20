@@ -161,3 +161,19 @@ let res2 = (2 + 3) * 4;
 
 console.log( res );
 console.log( res2 );
+
+// Exercise- Swapping Variables
+console.log('------------------------------------');
+
+let col = 'red';
+let col2 = 'blue';
+
+console.log(col);
+console.log(col2);
+
+let aux = col;
+col = col2;
+col2 = aux;
+
+console.log(col);
+console.log(col2);
