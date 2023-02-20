@@ -109,3 +109,18 @@ console.log('Elegible', eligibleForLoan2);
 let applicationRefuse = !eligibleForLoan2;
 
 console.log('Application Refused', applicationRefuse);
+
+// Logical Operators with Non-Booleans
+console.log('-------------------------------------------');
+// Falsy (flase)
+// undefined, null, 0 , false, '', NaN
+
+// Anything that is not Falsy -> Truthy
+
+// Short-circuiting 
+
+let userColor = undefined;
+let defaultColor = 'blue';
+let currentColor = userColor || defaultColor;
+
+console.log(currentColor);
