@@ -153,3 +153,11 @@ myPermission = myPermission | writePermision;
 
 let message = ( myPermission & readPermission ) ? 'yes' : 'no';
 console.log(message);
+
+// Operator Precedence
+console.log('-----------------------------------');
+let res = 2 + 3 * 4;
+let res2 = (2 + 3) * 4;
+
+console.log( res );
+console.log( res2 );
