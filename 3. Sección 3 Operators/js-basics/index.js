@@ -81,3 +81,31 @@ let points = 110;
 let type = points > 100 ? 'gold' : 'silver';
 
 console.log(type);
+
+// Logical Operators with Non-booleans
+console.log('**********************************');
+
+// Logical AND (&&)
+// Returns TRUE if both operands are TRUE
+console.log(true && true);
+console.log(false && true);
+console.log(true && false);
+
+let highIncome = true;
+let goodCreditScore = true;
+let eligibleForLoan = highIncome && goodCreditScore;
+
+console.log(eligibleForLoan);
+
+// Logical OR (||)
+// Returns TRUE if one of the operands is TRUE
+let highIncome2 = true;
+let goodCreditScore2 = false;
+let eligibleForLoan2 = highIncome2 || goodCreditScore2;
+
+console.log('Elegible', eligibleForLoan2);
+
+// Logical NOT (!)
+let applicationRefuse = !eligibleForLoan2;
+
+console.log('Application Refused', applicationRefuse);
