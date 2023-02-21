@@ -138,3 +138,12 @@ while ( i4 <= 10 ){
     i4++;
 }
 
+// Max of Two Numbers
+console.log('******************************');
+
+let number = max( 5, 8 );
+console.log('Max number is: ', number);
+
+function max( num1, num2 ){
+    return (num1 > num2) ? num1 : num2;
+}
