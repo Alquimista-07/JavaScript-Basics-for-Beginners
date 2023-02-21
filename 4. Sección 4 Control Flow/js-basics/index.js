@@ -95,3 +95,21 @@ for (let i = 0; i < 10;) {
     
 }
 *************************************************/
+
+// For...In
+console.log('***********************************');
+
+const person = {
+    name: 'Mosh',
+    age: 30
+}
+
+for ( let key in person ){
+    console.log(key, person[key]);
+}
+
+const colors = ['red', 'green', 'blue'];
+
+for( let index in colors ){
+    console.log(index, colors[index]);
+}
