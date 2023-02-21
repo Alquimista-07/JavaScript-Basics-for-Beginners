@@ -113,3 +113,10 @@ const colors = ['red', 'green', 'blue'];
 for( let index in colors ){
     console.log(index, colors[index]);
 }
+
+// For...of
+console.log('**********************************');
+
+for (let color of colors) {
+    console.log(color);
+}
