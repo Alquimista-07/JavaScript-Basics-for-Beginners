@@ -147,3 +147,12 @@ console.log('Max number is: ', number);
 function max( num1, num2 ){
     return (num1 > num2) ? num1 : num2;
 }
+
+// Exercise- Landscape or Portrait
+console.log('*******************************');
+
+console.log( isLandscape( 800, 500 ) );
+
+function isLandscape( width, height ){
+    return ( width > height );
+}
