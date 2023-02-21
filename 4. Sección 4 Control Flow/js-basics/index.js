@@ -56,3 +56,14 @@ while (i <= 5) {
     if ( i % 2 !== 0 ) console.log( i );
     i++;
 }
+
+// Do...While
+console.log('***********************************');
+
+let i2 = 9;
+
+do {
+    if ( i2 % 2 !== 0 ) console.log( i2 );
+    i2++;
+}
+while ( i2 <= 5 );
