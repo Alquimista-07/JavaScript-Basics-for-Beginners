@@ -35,3 +35,14 @@ switch ( role ){
         default:
             console.log('Unknown User');
 }
+
+// For
+console.log('*******************************');
+
+for (let i = 1; i <= 5; i++) {
+    if ( i % 2 !== 0 ) console.log('Hello World', i);
+}
+
+for (let i = 5; i >= 1; i--) {
+    if ( i % 2 !== 0 ) console.log('Hello World', i);
+}
