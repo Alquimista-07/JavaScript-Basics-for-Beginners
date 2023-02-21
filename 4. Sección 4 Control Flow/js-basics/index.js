@@ -120,3 +120,21 @@ console.log('**********************************');
 for (let color of colors) {
     console.log(color);
 }
+
+// Break and Continue
+console.log('***********************************');
+
+let i4 = 0;
+
+while ( i4 <= 10 ){
+
+    // if ( i4 === 5 ) break;
+    if( i4 % 2 === 0 ){
+        i4++;
+        continue;
+    }
+    
+    console.log(i4);
+    i4++;
+}
+
