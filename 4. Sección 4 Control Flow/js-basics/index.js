@@ -347,3 +347,32 @@ function showStars(rows){
     }
 
 }
+
+// Exercise - Prime Numbers
+console.log('******************************');
+
+showPrimes(10);
+
+// Prime (whose factors are only 1 an itself)
+// Composite
+
+// 12 = 1, 2, 3, 4, 12
+// Can be devided evenly by its factors
+
+function showPrimes(limit){
+
+    for( let number = 2; number <= limit; number++ ){
+        // 2 - current (number)
+        if( isPrime(number)) console.log(number);
+    }
+
+}
+
+function isPrime(number){
+    for( let factor = 2; factor < number; factor++ ){
+        if( number % factor === 0 ){
+            return false;
+        }
+    }
+    return true;
+}
