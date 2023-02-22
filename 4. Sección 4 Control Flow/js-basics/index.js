@@ -245,8 +245,9 @@ function countTruthy(array){
         if (value){
             count++;
         }
-    return count;
     }
+    
+    return count;
 
 }
 
@@ -269,5 +270,27 @@ function showProperties(obj){
             console.log(key, obj[key]);
         }
     }
+
+}
+
+// Exercise- Sum of Multiples 3 and 5
+console.log('******************************');
+
+console.log(sumVals(10));
+
+// Multiples of 3: 3, 6, 9
+// Multiples of 5: 5, 10
+
+function sumVals(limit){
+    let sumVal = 0;
+
+    for(let ind = 0; ind <= limit; ind++){
+
+        if(ind % 3 === 0 || ind % 5 === 0){
+            sumVal += ind;
+        }
+    }
+
+    return sumVal;
 
 }
