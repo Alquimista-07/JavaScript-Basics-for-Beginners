@@ -174,3 +174,34 @@ if( 'radius' in circlee) console.log('yes');
 if( 'draw' in circlee) console.log('yes');
 if( 'color' in circlee) console.log('yes');
 
+// Cloning an Object
+console.log('**********************************');
+
+const circleee = {
+    radius: 1,
+    draw(){
+        console.log('draw');
+    }
+}
+
+const another = {};
+
+for (let key in circleee) {
+    another[key] = circleee[key];    
+}
+
+console.log(another);
+
+// Another method to copy objects
+const another2 = Object.assign({}, circleee);
+console.log(another2);
+
+// Another method to copy objects by adding an additional property.
+const another3 = Object.assign({
+    color: 'yellow'
+}, circleee);
+console.log(another3);
+
+// Using spred operation
+const another4 = { ...circleee };
+console.log(another4);
