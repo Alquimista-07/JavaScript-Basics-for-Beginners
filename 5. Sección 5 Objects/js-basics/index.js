@@ -68,3 +68,14 @@ delete circle4.color;
 delete circle4.draw;
 
 console.log(circle4);
+
+// Constructor Property
+console.log('*********************************');
+
+let y = {};
+
+// let y = new Object();
+
+new String(); // '', "", ``
+new Boolean(); // true, false
+new Number(); // 1, 2, 3, 4, ...
