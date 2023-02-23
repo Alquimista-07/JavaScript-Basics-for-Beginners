@@ -79,3 +79,25 @@ let y = {};
 new String(); // '', "", ``
 new Boolean(); // true, false
 new Number(); // 1, 2, 3, 4, ...
+
+// Functions are Objects
+console.log('**********************************');
+
+function Circle2(radius){
+    this.radius = radius;
+    this.draw = function(){
+        console.log('draw');
+    }
+}
+
+const Circle3 = new Function('radius', `
+this.radius = radius;
+    this.draw = function(){
+        console.log('draw');
+    }
+`);
+
+Circle.call({}, 1, 2, 3);
+Circle.call({}, [1, 2, 3]);
+
+const circle4 = new Circle3(1);
