@@ -142,3 +142,35 @@ function increase2(obj){
 
 increase2(obj);
 console.log(obj);
+
+// Enumerating Properties of an Object
+console.log('*************************************');
+
+const circlee = {
+    radius: 1,
+    draw(){
+        console.log('draw');
+    }
+}
+
+for(let key in circlee){
+    console.log(key, circlee[key]);
+}
+
+// Error because circlee is not iterable
+// for(let key of circlee){
+//     console.log(key);
+// }
+
+for(let key of Object.keys(circlee)){
+    console.log(key);
+}
+
+for(let entry of Object.entries(circlee)){
+    console.log(entry);
+}
+
+if( 'radius' in circlee) console.log('yes');
+if( 'draw' in circlee) console.log('yes');
+if( 'color' in circlee) console.log('yes');
+
