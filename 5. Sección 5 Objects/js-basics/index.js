@@ -51,3 +51,20 @@ function Circle(radius){
 }
 
 const circle3 = new Circle(1);
+
+// Dynamic Nature of Objects
+console.log('*****************************');
+
+const circle4 = {
+    radius: 1
+};
+
+circle4.color = 'red';
+circle4.draw = function(){}
+
+console.log(circle4);
+
+delete circle4.color;
+delete circle4.draw;
+
+console.log(circle4);
