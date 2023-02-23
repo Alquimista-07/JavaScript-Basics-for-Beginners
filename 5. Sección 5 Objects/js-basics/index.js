@@ -100,4 +100,45 @@ this.radius = radius;
 Circle.call({}, 1, 2, 3);
 Circle.call({}, [1, 2, 3]);
 
-const circle4 = new Circle3(1);
+const circle5 = new Circle3(1);
+
+// 54. 7- Value vs. Reference Types
+console.log('*************************************');
+
+// Value Types: Number, String, Boolean, Symbol, undefined, null
+// Reference Types: Object, Function, Array
+
+let w = 10;
+let v = w;
+
+w = 20;
+
+console.log(w);
+console.log(v);
+
+let w2 = {value: 10};
+let v2 = w2;
+
+w2.value = 20;
+
+console.log(w2);
+console.log(v2);
+
+let number = 10;
+
+function increase(number){
+    number++;
+    // console.log(number);
+}
+
+increase(number);
+console.log(number);
+
+let obj = { value: 10 };
+
+function increase2(obj){
+    obj.value++;
+}
+
+increase2(obj);
+console.log(obj);
