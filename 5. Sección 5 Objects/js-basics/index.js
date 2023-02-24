@@ -205,3 +205,11 @@ console.log(another3);
 // Using spred operation
 const another4 = { ...circleee };
 console.log(another4);
+
+// 58. 11- Math
+// https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Math
+console.log('*************************************');
+
+console.log(Math.round(1.9));
+console.log(Math.max(1, 2, 3, 4, 5));
+console.log(Math.min(1, 2, 3, 4, 5));
