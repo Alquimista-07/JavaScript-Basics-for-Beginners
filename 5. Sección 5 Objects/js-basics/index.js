@@ -242,3 +242,35 @@ console.log(message.trim());
 console.log(message.trimStart());
 console.log(message.trimEnd());
 console.log(message.split(' '));
+
+// Template Literals
+console.log('**************************************');
+
+// String primitive
+// This looks very bad, for this we have the literal template shown below
+const message2 = 'This is my\n' + 
+                 '\'first\' message';
+
+console.log(message2);
+
+// Object literal: {}
+// Boolean literal: true, false
+// String literal: ', ""
+// Template literal: ``
+
+const message3 = 
+`This si my
+'fist' message`;
+console.log(message3);
+
+const name = 'John';
+const message4 = 'Hi ' + name + ',\n';
+
+const anotherMessage = `Hi ${name} ${ 2 + 3 },
+
+Thank you for joining my mailing list.
+
+Regards,
+Mosh`;
+
+console.log(anotherMessage);
