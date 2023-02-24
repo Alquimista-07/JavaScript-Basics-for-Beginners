@@ -274,3 +274,21 @@ Regards,
 Mosh`;
 
 console.log(anotherMessage);
+
+// Date
+// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date
+console.log('******************************');
+
+const now = new Date();
+const date1 = new Date('May 11 2023 09:00');
+const date2 = new Date(2023, 4, 11, 9, 0);
+
+console.log(now);
+console.log(date1);
+console.log(date2);
+
+console.log(now.getDay());
+console.log(now.setFullYear(2017));
+console.log(now.toDateString());
+console.log(now.toTimeString());
+console.log(now.toISOString());
