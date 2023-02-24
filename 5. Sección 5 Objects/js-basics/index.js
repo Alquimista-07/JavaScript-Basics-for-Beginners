@@ -213,3 +213,32 @@ console.log('*************************************');
 console.log(Math.round(1.9));
 console.log(Math.max(1, 2, 3, 4, 5));
 console.log(Math.min(1, 2, 3, 4, 5));
+
+// 59. 12- String
+// https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/String
+console.log('***************************************');
+
+// String primitive
+const message = ' This is my \'first \nmessage ';
+
+// String object
+const anotherString = new String('hi');
+
+console.log(typeof(message));
+console.log(typeof(anotherString));
+console.log(message.length);
+console.log(message[0]);
+console.log(message[1]);
+console.log(message.includes('my'));
+console.log(message.includes('not'));
+console.log(message.startsWith('This'));
+console.log(message.startsWith('this'));
+console.log(message.endsWith('e'));
+console.log(message.indexOf('my'));
+console.log(message.replace('first', 'second'));
+console.log(message.toUpperCase());
+console.log(message.toLocaleLowerCase());
+console.log(message.trim());
+console.log(message.trimStart());
+console.log(message.trimEnd());
+console.log(message.split(' '));
