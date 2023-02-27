@@ -309,3 +309,28 @@ function showAddress(address){
 }
 
 showAddress(address);
+
+// Exercise- Factory and Constructor Function
+console.log('************************************');
+
+let address2 = createAddress('a', 'b', 'c');
+let address3 = new Address('a', 'b', 'c');
+
+console.log(address2);
+console.log(address3);
+
+// Factory function
+function createAddress(street, city, zipCode){
+    return {
+        street,
+        city,
+        zipCode
+    }
+}
+
+// Constructor function
+function Address(street, city, zipCode){
+    this.street = street;
+    this.city = city;
+    this.zipCode = zipCode;
+}
