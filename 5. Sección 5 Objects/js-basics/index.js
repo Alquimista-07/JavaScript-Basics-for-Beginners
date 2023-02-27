@@ -292,3 +292,20 @@ console.log(now.setFullYear(2017));
 console.log(now.toDateString());
 console.log(now.toTimeString());
 console.log(now.toISOString());
+
+// Exercise 1- Address Object
+console.log('******************************');
+
+let address = {
+    street: 'Car. 123 # 34-64',
+    city: 'New York',
+    zipCode: 10001
+};
+
+function showAddress(address){
+    for (let key in address){
+        console.log(key, address[key]);
+    }
+}
+
+showAddress(address);
