@@ -362,3 +362,28 @@ function areEqual(address4, address5){
 function areSame(address4, address5){
     return address4 === address5;
 }
+
+// Exercise 4- Blog Post Object
+console.log('*********************************');
+
+// title
+// body
+// author
+// views
+// comments
+//         (author, body)
+// isLive
+
+let post = {
+    title: 'a',
+    body: 'b',
+    author: 'c',
+    views: 10,
+    comments: [
+        {author: 'a', body: 'b' },
+        {author: 'c', body: 'd' },
+    ],
+    isLive:true
+}
+
+console.log(post);
