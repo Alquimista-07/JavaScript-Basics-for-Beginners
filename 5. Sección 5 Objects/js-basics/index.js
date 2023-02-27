@@ -387,3 +387,18 @@ let post = {
 }
 
 console.log(post);
+
+// Exercise 5- Constructor Functions
+console.log('**********************************');
+
+let post2 = new POST('a', 'b', 'c');
+console.log(post2);
+
+function POST(title, body, author) {
+    this.title = title;
+    this.body = body;
+    this.author = author;
+    this.views = 0;
+    this.comments = [];
+    isLive = false;
+}
