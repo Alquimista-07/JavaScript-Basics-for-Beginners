@@ -334,3 +334,31 @@ function Address(street, city, zipCode){
     this.city = city;
     this.zipCode = zipCode;
 }
+
+// Exercise 3- Object Equality
+console.log('************************************');
+
+let address4 = new Address('a', 'b', 'c');
+let address5 = new Address('a', 'b', 'c');
+let address6 = address4;
+
+console.log(areEqual(address4, address5));
+console.log(areSame(address4, address5));
+console.log(areSame(address4, address6));
+
+// Constructor function
+function Address2(street, city, zipCode){
+    this.street = street;
+    this.city = city;
+    this.zipCode = zipCode;
+}
+
+function areEqual(address4, address5){
+    return address4.street === address5.street &&
+           address4.city === address5.city &&
+           address4.zipCode === address5.zipCode;
+}
+
+function areSame(address4, address5){
+    return address4 === address5;
+}
