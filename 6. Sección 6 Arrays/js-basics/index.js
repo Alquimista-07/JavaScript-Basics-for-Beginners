@@ -133,3 +133,13 @@ const slice2 = combined.slice();
 
 console.log(slice);
 console.log(slice2);
+
+// The Spread Operator
+console.log('************************************');
+
+const firstArray1 = [1, 2, 3];
+const secondArray1 = [4, 5, 6];
+
+const combined1 = [...firstArray1, 'a', ...secondArray1, 'b'];
+
+console.log(combined1);
