@@ -55,3 +55,15 @@ const course3 = courses.findIndex(function(course){
 });
 
 console.log(course3);
+
+// Arrow Functions
+console.log('************************************');
+
+const course4 = courses.find(course => {
+    return course.name === 'a'
+});
+
+console.log(course4);
+
+const course5 = courses.find(course => course.name === 'a');
+console.log(course5);
