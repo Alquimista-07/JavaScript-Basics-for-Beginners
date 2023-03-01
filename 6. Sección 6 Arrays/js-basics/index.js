@@ -88,3 +88,32 @@ console.log(first);
 const middle = numbers4.splice(1, 2);
 console.log(numbers4);
 console.log(middle);
+
+// Emptying an Array
+console.log('***********************************');
+
+let numbers5 = [1, 2, 3, 4];
+let numbers6 = [1, 2, 3, 4];
+let numbers7 = [1, 2, 3, 4];
+let numbers8 = [1, 2, 3, 4];
+let another = numbers5;
+
+// Solution 1
+numbers5 = [];
+console.log(numbers5);
+console.log(another);
+
+// Solution 2
+numbers6.length = 0;
+console.log(numbers6);
+
+// Solution 3
+numbers7.splice(0, numbers.length);
+console.log(numbers7);
+
+// Solution 4
+while(numbers8.length > 0){
+    numbers8.pop();
+}
+
+console.log(numbers8);
