@@ -164,3 +164,19 @@ num.forEach(number => {
 num.forEach(number => console.log(number));
 
 num.forEach((number, index) => console.log(index, number));
+
+// Joining Arrays
+console.log('****************************************');
+
+const num2 = [1, 2, 3];
+const joined = num2.join(';');
+
+console.log(joined);
+
+const message = 'This is my first message';
+const parts = message.split(' ');
+
+console.log(parts);
+
+const combined2 = parts.join('-');
+console.log(combined2);
