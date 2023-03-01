@@ -180,3 +180,35 @@ console.log(parts);
 
 const combined2 = parts.join('-');
 console.log(combined2);
+
+// Sorting Arrays
+console.log('***************************************');
+
+const numb = [2, 3, 1];
+console.log(numb);
+
+numb.sort();
+console.log(numb);
+
+numb.reverse();
+console.log(numb);
+
+const courses1 = [
+    { id: 1, name: 'Node.js' },
+    { id: 2, name: 'javaScript' },
+];
+
+// NOTA: https://www.cs.cmu.edu/~pattis/15-1XX/common/handouts/ascii.html
+courses1.sort(function(a, b){
+    // a < b => -1
+    // a > b => 1
+    // a === b => 0
+    const nameA = a.name.toUpperCase();
+    const nameB = b.name.toUpperCase();
+
+    if(nameA < nameB) return -1;
+    if (nameA > nameB) return 1;
+    return 0;
+});
+
+console.log(courses1);
