@@ -229,3 +229,17 @@ const atLeastOnePositive = num3.some(function(value){
 });
 
 console.log(atLeastOnePositive);
+
+// Filtering an Array
+console.log('**************************************');
+
+const numbr = [1, -1, 2, 3];
+
+const filtered = numbr.filter(function(value){
+    return value >= 0;
+});
+
+const filtered2 = numbr.filter(n => n >= 0);
+
+console.log(filtered);
+console.log(filtered2);
