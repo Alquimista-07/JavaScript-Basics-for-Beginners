@@ -67,3 +67,24 @@ console.log(course4);
 
 const course5 = courses.find(course => course.name === 'a');
 console.log(course5);
+
+// Removing Elements
+console.log('*************************************');
+
+const numbers3 = [1, 2, 3, 4, 5, 6];
+const numbers4 = [1, 2, 3, 4, 5, 6];
+
+// End
+const last = numbers3.pop();
+console.log(numbers3);
+console.log(last);
+
+// Beginning
+const first = numbers3.shift();
+console.log(numbers3);
+console.log(first);
+
+// Middle
+const middle = numbers4.splice(1, 2);
+console.log(numbers4);
+console.log(middle);
