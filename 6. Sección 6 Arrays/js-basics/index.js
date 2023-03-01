@@ -143,3 +143,24 @@ const secondArray1 = [4, 5, 6];
 const combined1 = [...firstArray1, 'a', ...secondArray1, 'b'];
 
 console.log(combined1);
+
+// Iterating an Array
+console.log('****************************************');
+
+const num = [1, 2, 3];
+
+for(let number of num){
+    console.log(number);
+}
+
+num.forEach(function(number){
+    console.log(number);
+});
+
+num.forEach(number => {
+    console.log(number);
+});
+
+num.forEach(number => console.log(number));
+
+num.forEach((number, index) => console.log(index, number));
