@@ -29,3 +29,29 @@ console.log(numbers2.indexOf('1') !== -1);
 
 console.log(numbers2.includes(1));
 console.log(numbers2.includes('1'));
+
+// Finding Elements (Reference Types)
+console.log('***********************************');
+const courses = [
+    {id: 1, name: 'a'},
+    {id: 2, name: 'b'},
+];
+
+// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/find
+const course = courses.find(function(course){
+    return course.name === 'a';
+});
+
+console.log(course);
+
+const course2 = courses.findIndex(function(course){
+    return course.name === 'xyz';
+});
+
+console.log(course2);
+
+const course3 = courses.findIndex(function(course){
+    return course.name === 'a';
+});
+
+console.log(course3);
