@@ -117,3 +117,19 @@ while(numbers8.length > 0){
 }
 
 console.log(numbers8);
+
+// Combining and Slicing Arrays
+console.log('***********************************');
+
+const firstArray = [1, 2, 3];
+const secondArray = [4, 5, 6];
+
+let combined = firstArray.concat(secondArray);
+
+console.log(combined);
+
+const slice = combined.slice(2, 5);
+const slice2 = combined.slice();
+
+console.log(slice);
+console.log(slice2);
