@@ -212,3 +212,20 @@ courses1.sort(function(a, b){
 });
 
 console.log(courses1);
+
+// Testing the Elements of an Array
+console.log('************************************');
+
+const num3 = [1, -1, 2, 3];
+
+const allPositive = num3.every(function(value){
+    return value >= 0;
+});
+
+console.log(allPositive);
+
+const atLeastOnePositive = num3.some(function(value){
+    return value >= 0;
+});
+
+console.log(atLeastOnePositive);
