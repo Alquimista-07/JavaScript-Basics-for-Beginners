@@ -303,3 +303,19 @@ function arrayFromRange(min, max){
     }
     return output;
 }
+
+// Exercise 2- Includes
+console.log('***************************************');
+
+const nums = [1, 2, 3, 4];
+
+console.log(includes(nums, 1));
+
+function includes(array, searchElement){
+    for(let element of array){
+        if(element === searchElement){
+            return true
+        }
+    }
+    return false;
+}
