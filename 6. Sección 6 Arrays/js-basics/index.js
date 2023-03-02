@@ -380,3 +380,19 @@ function countOcurrences(array, searchElement){
     }, 0);
 
 }
+
+// Exercise 6- Get Max
+console.log('*******************************************');
+
+const numbs2 = [1, 2, 3, 4];
+
+const max = getMax(numbs2);
+
+console.log(max);
+
+function getMax(arr){
+    if(arr.length === 0) return undefined;
+    
+    return arr.reduce((a, b) => (a > b) ? a : b);
+
+}
