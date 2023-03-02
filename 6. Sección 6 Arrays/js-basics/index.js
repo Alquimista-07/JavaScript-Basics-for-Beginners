@@ -361,3 +361,22 @@ function move(array, index, offset){
     return output;
 
 }
+
+// Exercise 5- Count Occurrences
+console.log('****************************************');
+
+const numbss = [1, 2, 3, 4, 1];
+
+const count = countOcurrences(numbss, 1);
+
+console.log(count);
+
+function countOcurrences(array, searchElement){
+
+    return array.reduce((acummulator, current) => {
+        const ocurrence = (current === searchElement) ? 1 : 0;
+        console.log(acummulator, current, searchElement);
+        return acummulator + ocurrence;
+    }, 0);
+
+}
