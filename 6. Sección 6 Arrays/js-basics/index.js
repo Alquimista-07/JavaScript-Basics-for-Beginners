@@ -288,3 +288,18 @@ const sum2 = numberss.reduce((acumulator, currentValue) => {
 */
 
 console.log(sum2);
+
+// Exercise 1- Array from Range
+console.log('*******************************************');
+
+const numbersss = arrayFromRange(-10, -4);
+
+console.log(numbersss);
+
+function arrayFromRange(min, max){
+    const output = [];
+    for(let i = min; i <= max; i++){
+        output.push(i);
+    }
+    return output;
+}
