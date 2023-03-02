@@ -243,3 +243,16 @@ const filtered2 = numbr.filter(n => n >= 0);
 
 console.log(filtered);
 console.log(filtered2);
+
+// 82. 15- Mapping an Array
+console.log('***************************************');
+
+const numbe = [1, -1, 2, 3];
+
+const items = numbe
+                .filter(n => n >= 0)
+                .map(n => ({ value: n } ))
+                .filter(obj => obj.value > 1)
+                .map(obj => obj.value);
+
+console.log(items);
