@@ -319,3 +319,22 @@ function includes(array, searchElement){
     }
     return false;
 }
+
+// Exercise 3- Except
+console.log('***************************************');
+
+const numss = [1, 2, 3, 4, 1, 1];
+
+const output2 = except(numss, [1, 2]);
+
+console.log(output2);
+
+function except(array, excluded){
+    const output = [];
+    for(let element of array){
+        if(!excluded.includes(element)){
+            output.push(element) 
+        }
+    }
+    return output;
+}
