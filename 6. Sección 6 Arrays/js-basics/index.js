@@ -256,3 +256,35 @@ const items = numbe
                 .map(obj => obj.value);
 
 console.log(items);
+
+// Reducing an Array
+console.log('*****************************************');
+
+const numberss = [1, -1, 2, 3];
+
+let sum = 0;
+
+// Without using the reduce method
+for(let n of numberss){
+    sum += n;
+}
+
+console.log(sum);
+
+// Using reduce method
+// a = 1, curr = -1 => a = 0
+// a = 0, curr = 2 => a = 2
+// a = 2, curr = 3 => a = 5
+const sum2 = numberss.reduce((acumulator, currentValue) => {
+    return acumulator + currentValue;
+});
+
+// We can initialize the current value of by adding the value as the second argument
+// For example
+/*
+const sum2 = numberss.reduce((acumulator, currentValue) => {
+    return acumulator + currentValue;
+},0);
+*/
+
+console.log(sum2);
