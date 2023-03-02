@@ -338,3 +338,26 @@ function except(array, excluded){
     }
     return output;
 }
+
+// Exercise 4- Moving an Element
+console.log('***************************************');
+
+const numbs = [1, 2, 3, 4];
+
+const output3 = move(numbs, 1, 2);
+
+console.log(output3);
+
+function move(array, index, offset){
+    const position = index + offset;
+    if(position >= array.length || position < 0){
+        console.log('Invalid offset.');
+        return;
+    }
+
+    const output = [...array];
+    const element = output.splice(index, 1)[0];
+    output.splice(position, 0, element);
+    return output;
+
+}
