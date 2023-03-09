@@ -166,3 +166,25 @@ function stop() {
 }
 
 start();
+
+// Let vs Var
+// Note: When we use var the scope is not limited to the block 
+// and this can cause problems
+console.log('********************************************');
+
+function start2(){
+    for( var i = 0; i < 5; i++ ){
+        console.log(i);
+        if(true){
+            let color2 = 'red';
+        }
+    }
+
+    console.log(i);
+    // console.log(color2); // Error caused by scope
+}
+
+// var => function-scoped
+// ES6 (ES2015): let, const => block-scoped
+
+start2();
