@@ -77,3 +77,13 @@ function sum4(args) {
     console.log(args);
 }
 sum4(1,2,3,5,10);
+
+// Default Parameters
+console.log('**************************************');
+
+function interest(principal, rate = 3.5, years){
+    //years = years || 5;
+    return principal * rate / 100 * years;
+}
+
+console.log(interest(10000, undefined,  5));
