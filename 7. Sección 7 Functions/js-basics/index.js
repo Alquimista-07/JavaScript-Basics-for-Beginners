@@ -188,3 +188,49 @@ function start2(){
 // ES6 (ES2015): let, const => block-scoped
 
 start2();
+
+// The This Keyword
+console.log('***************************************');
+
+// method -> obj
+// function -> global (window, global)
+
+//----------------------------
+// method -> obj
+//----------------------------
+const video = {
+    title: 'a',
+    play() {
+        console.log(this);
+    }
+};
+
+video.stop = function() {
+    console.log(this);
+}
+
+// video.play();
+video.stop();
+
+//------------------------------------------------
+// function -> global (window, global)
+//------------------------------------------------
+function Video(title) {
+    this.title = title;
+    console.log(this);
+}
+
+const v = new Video('b'); // {}
+
+//------------------
+const video2 = {
+    title: 'a',
+    tags: ['a', 'b', 'c'],
+    showTags() {
+        this.tags.forEach(function(tag){
+            console.log(this, tag);
+        }, this);
+    }
+};
+
+video2.showTags();
