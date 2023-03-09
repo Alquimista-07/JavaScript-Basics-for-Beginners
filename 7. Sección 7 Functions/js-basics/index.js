@@ -140,3 +140,29 @@ catch(err){
 }
 
 console.log(person2);
+
+// Local vs. Global Scope
+console.log('*********************************************');
+
+const color = 'red'; // global scope
+
+function start() {
+    const message = 'hi'; // Local scope
+    const color = 'blue'; // Local
+    console.log(color);
+
+    if(true){
+        const another = 'bye';
+    }
+    
+    for( let i = 0; i < 5; i ++){
+        console.log(i);
+    }
+    // console.log(i); // Error i is not defined
+}
+
+function stop() {
+    const message = 'bye'; // Local scope
+}
+
+start();
