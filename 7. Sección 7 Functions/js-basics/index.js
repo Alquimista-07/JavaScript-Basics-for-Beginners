@@ -87,3 +87,26 @@ function interest(principal, rate = 3.5, years){
 }
 
 console.log(interest(10000, undefined,  5));
+
+// Getters and Setters
+console.log('***************************************');
+
+const person = {
+    firstName: 'Mosh',
+    lastName: 'Hemadani',
+    get fullName() {
+        return `${person.firstName} ${person.lastName}`;
+    },
+    set fullName(value) {
+        const parts = value.split(' ');
+        this.firstName = parts[0];
+        this.lastName = parts[1];
+    }
+};
+
+person.fullName = 'John Smith';
+
+// getters => access properties
+// setters => change (mutate) then
+
+console.log(person);
