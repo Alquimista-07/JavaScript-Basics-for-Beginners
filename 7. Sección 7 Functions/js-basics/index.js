@@ -288,3 +288,15 @@ const video5 = {
 };
 
 video5.showTags();
+
+// Exercise 1- Sum of Arguments
+console.log('***************************************');
+
+console.log(Exc1Sum([1, 2, 3, 4]));
+
+function Exc1Sum(...items) {
+    if (items.length === 1 && Array.isArray(items[0])){
+        items = [...items[0]];
+    }
+    return items.reduce((a, b) => a + b);
+}
