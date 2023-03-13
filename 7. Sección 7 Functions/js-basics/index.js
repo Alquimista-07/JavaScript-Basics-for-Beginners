@@ -300,3 +300,15 @@ function Exc1Sum(...items) {
     }
     return items.reduce((a, b) => a + b);
 }
+
+// Exercise 2- Area of Circle
+console.log('******************************************');
+
+const circleArea = {
+    radius: 1,
+    get area() {
+        return Math.PI * this.radius * this.radius;
+    }
+};
+
+console.log(circleArea.area);
