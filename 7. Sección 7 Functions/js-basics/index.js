@@ -234,3 +234,57 @@ const video2 = {
 };
 
 video2.showTags();
+
+// Changing This
+console.log('**********************************');
+
+const video3 = {
+    title: 'x',
+    tags: ['x', 'y', 'z'],
+    showTags() {
+        const self = this;
+        this.tags.forEach(function(tag){
+            console.log(self.title, tag);
+        });
+    }
+};
+
+video3.showTags();
+
+//-------------------
+
+function playVideo(a, b){
+    console.log(this);
+}
+
+playVideo.call({ name: 'Mosh' }, 1, 2);
+playVideo.apply({ name: 'Mosh' }, [1, 2]);
+const fn = playVideo.bind({ name: 'Mosh' })();
+
+playVideo();
+
+//---------
+const video4 = {
+    title: 'x',
+    tags: ['x', 'y', 'z'],
+    showTags() {
+        this.tags.forEach(function(tag){
+            console.log(this.title, tag);
+        }.bind(this));
+    }
+};
+
+video4.showTags();
+
+//----------------------
+const video5 = {
+    title: 'x',
+    tags: ['x', 'y', 'z'],
+    showTags() {
+        this.tags.forEach(tag => {
+            console.log(this.title, tag);
+        });
+    }
+};
+
+video5.showTags();
